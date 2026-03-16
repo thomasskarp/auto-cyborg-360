@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Auto-Cyborg 360",
+  "description": "Hybrid Sales Assistant & CRM",
+  "version": "0.0.6",
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "identity",
+    "identity.email",
+    "scripting",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "https://*.facebook.com/*",
+    "https://*.googleusercontent.com/*",
+    "https://script.google.com/*",
+    "https://www.googleapis.com/*",
+    "https://web.whatsapp.com/*",
+    "https://www.facebook.com/messages/*"
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "oauth2": {
+    "client_id": "YOUR_GOOGLE_OAUTH_CLIENT_ID_HERE.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/spreadsheets",
+      "https://www.googleapis.com/auth/drive.readonly",
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
+  }
+}
