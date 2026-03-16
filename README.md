@@ -1,5 +1,7 @@
 # 🤖 Auto-Cyborg 360 | Full-Stack Dealership ERP & Omnichannel CRM
 
+[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Available-blue?logo=google-chrome)]       (https://chromewebstore.google.com/detail/dev-auto-cyborg-360/kjfjedgjkehndonpbgkffilaidcdpjob?authuser=0&hl=es)
+
 Auto-Cyborg 360 is a complete, custom-built interconnected ecosystem designed to automate and manage an entire vehicle dealership. It integrates inventory management, financial tracking, omnichannel marketing, and CRM lead generation into a single automated pipeline.
 
 ## 🏗️ The Interconnected Ecosystem
