@@ -1,22 +1,39 @@
-# 🤖 Auto-Cyborg 360 | Hybrid Sales Assistant & CRM
+# 🤖 Auto-Cyborg 360 | Full-Stack Dealership ERP & Omnichannel CRM
 
-Auto-Cyborg 360 is a powerful Chrome Extension built with **React, TypeScript, and Plasmo**. It acts as a hybrid sales assistant, automating vehicle listings and customer interactions across the Meta ecosystem (Facebook, Instagram, WhatsApp) and syncing them directly to a Google Sheets CRM.
+Auto-Cyborg 360 is a complete, custom-built interconnected ecosystem designed to automate and manage an entire vehicle dealership. It integrates inventory management, financial tracking, omnichannel marketing, and CRM lead generation into a single automated pipeline.
 
-## ✨ Key Features
-* **Omnichannel Auto-Publishing:** Automates vehicle listings on Facebook Marketplace, Instagram Feed, and WhatsApp Status with a single click.
-* **Financial Engine:** Real-time calculation of down payments, interest rates (TNA), and installments based on vehicle price and bank rules.
-* **Smart Injectors:** Bypasses React synthetic events to naturally inject text, images, and Canvas-rendered posters into chats.
-* **CRM Synchronization:** Automatically detects buying intent in DMs and logs the lead directly to Google Sheets using the Google Drive/Sheets API.
+## 🏗️ The Interconnected Ecosystem
+
+This project consists of 4 tightly integrated modules:
+
+### 1. 📱 AppSheet (Inventory Entry)
+* **Function:** The mobile entry point for the sales team.
+* **Features:** Upload new vehicles, attach photos, and update statuses directly from a smartphone. Data is instantly synced to Google Sheets.
+
+### 2. 🤖 Telegram Bot & Google Apps Script (Finance & Management)
+* **Function:** The administrative and financial brain.
+* **Features:** Custom Telegram bot connected to Google Sheets to log daily expenses, register sales, and query business data in real-time via chat commands.
+
+### 3. 🌐 Web App Catalog (Backend API)
+* **Function:** Public-facing digital showroom and API.
+* **Features:** A lightweight HTML/Tailwind web app hosted on Google Apps Script. It dynamically pulls live inventory and photos from Google Drive, serving as both a customer catalog and a data source for the extension.
+
+### 4. 💻 Chrome Extension (Omnichannel Publisher & CRM)
+* **Function:** The automation workhorse (Built with React, TypeScript & Plasmo).
+* **Features:** * **Auto-Publishing:** Injects DOM events to auto-publish inventory to Facebook Marketplace, Instagram Feed, and WhatsApp Stories (with dynamic Canvas-generated posters).
+  * **Financial Engine:** Calculates down payments and installments (TNA) in real-time.
+  * **Smart CRM:** Detects buying intent in Meta DMs and logs leads directly into the Google Sheets database via OAuth2.
 
 ## 🛠️ Tech Stack
+* **Frontend:** React 18, Tailwind CSS, TypeScript, HTML/JS
 * **Framework:** Plasmo (Manifest V3)
-* **Frontend:** React 18, Tailwind/CSS, Lucide Icons
-* **Language:** TypeScript
-* **APIs:** Google Drive API, Google Sheets API, Chrome Extension API
+* **Backend:** Google Apps Script, Node.js
+* **Database & Storage:** Google Sheets, Google Drive API
+* **Integrations:** Telegram Bot API, AppSheet, Meta DOM Manipulation
 
-## 🚀 How to Run Locally
+## 🚀 How to Run Locally (Extension Module)
 1. Clone the repository.
 2. Run `npm install` to install dependencies.
 3. Create a `.env` file based on your Google Cloud credentials.
 4. Run `npm run dev` to start the Plasmo development server.
-5. Load the unpacked extension from the `build/chrome-mv3-dev` directory in Chrome.
+5. Load the unpacked extension from `build/chrome-mv3-dev`.
